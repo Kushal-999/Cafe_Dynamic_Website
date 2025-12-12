@@ -1,0 +1,11 @@
+sudo apt-get install apache2 php libapache2-mod-php mysql-server mysql-client php-mysql
+
+create user "msis"@"localhost" identified by "msis123";
+
+create user "msis"@"%" identified by "msis123";
+
+grant all privilages on cafedb. * to "msis"@"%" with grant option;
+
+cd /etc/apache2/sites-available/000-default-conf
+cd /etc/mysql/mysqld/mysqld.conf
+
